@@ -11,4 +11,7 @@
       <button mat-button color="warn" (click)="deleteCard(card)">Delete</button>
     </mat-card-actions>
   </mat-card>
+  <div *ngIf="!cards.length" style="display: flex;align-items: center;height: 60vh;">
+    <h1>No cards present.</h1>
+  </div>
 </div>
