@@ -1,0 +1,30 @@
+# Django related
+migrations/
+db.sqlite3
+static/
+media/
+
+# Python related
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env/
+
+# Pipenv
+Pipfile.lock
+Pipfile
+
+# IDE files (optional)
+.idea/
+
+# Django secret key (if exists)
+*.key
+
+# Pytest cache
+*.coveragerc
+coverage/
+*.hypothesis/

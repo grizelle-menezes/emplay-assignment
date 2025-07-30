@@ -1,0 +1,14 @@
+<div class="add-card-btn-container">
+  <button mat-raised-button (click)="addNewCard()">Add New Card</button>
+</div>
+
+<div class="card-container">
+  <mat-card *ngFor="let card of cards" class="card">
+    <mat-card-title>{{ card.title }}</mat-card-title>
+    <mat-card-content>{{ card.description }}</mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="updateCard(card)">Edit</button>
+      <button mat-button color="warn" (click)="deleteCard(card)">Delete</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
